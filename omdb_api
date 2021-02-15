@@ -1,0 +1,16 @@
+Getting movie
+
+ const response = await axios.get('http://www.omdbapi.com/', {
+            params:{
+                s : keyword,
+                apikey : '89ceba30'
+            } 
+
+Getting movie Detail
+
+ onMovieClick =  async (movieID) =>{
+        const response = await axios.get('http://www.omdbapi.com/', {
+            params:{
+                i : movieID,
+                apikey : '89ceba30'
+            } 
