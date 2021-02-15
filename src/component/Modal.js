@@ -2,17 +2,18 @@ import React from 'react';
 
 const Modal = (props) =>{
     return (  
-        <div class="modal fade" id="movieModal">
-        <div class="modal-dialog" >
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" >Test Modal Title</h5>
-                    <button type="button" class="close" data-dismiss="modal">
+        <div className="modal fade" id="movieModal">
+            {console.log(props.movie)}
+        <div className="modal-dialog" >
+            <div className="modal-content">
+                <div className="modal-header">
+                    <h5 className="modal-title" >Test Modal Title</h5>
+                    <button type="button" className="close" data-dismiss="modal">
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                        Test Modal Body
+                <div className="modal-body">
+                    {props.children}
                 </div>
             </div>
         </div>
